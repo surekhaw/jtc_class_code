@@ -78,9 +78,11 @@ print("Question 4")
 print("Imagine that another one of your most favourite restaurants modified its opening and closing hours during Covid. Update just the hours field (3rd value of the list) for 1 restaurant in the dictionary fav_restaurants.")
 
 # TODO: Update the hours field of 1 restaurant in the dictionary fav_restaurants.
+Mulberry_old_hours = fav_restaurants["Mulberry\'s"][2]
+fav_restaurants["Mulberry\'s"][2] = "11:00am - 4:00pm"
 
 # TODO: Print the old and new open hours of the restaurant by accessing those fields from the dictionary.
-print(fav_restaurants)
+print(f"{Mulberry_old_hours}\n{fav_restaurants['Mulberry\'s'][2]}")
+
 # TODO: Print the updated dictionary.
-fav_restaurants["Mulberry\'s"][2] = "11:00am - 4:00pm"
 print(fav_restaurants)
